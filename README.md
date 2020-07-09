@@ -8,10 +8,11 @@ To enable ribbon to talk to Naming server
 @RibbonClient(name="currency-exchange-service")
 
 disable url in application.properties in currencyconversionservice
+
 #currency-exchange-service.ribbon.listOfServers=http://localhost:8081,http://localhost:8002
 
 no where else in the currencyconversionservice we have hardoded the url of the currencyexchangeservice and 
-we know about the currencyexchangeservice
+we dont know about the currencyexchangeservice
 
 Important Note
 without configuring the url for the currencyexchangeservice inside currencycalculationservice, we are able
